@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="SoulService.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="SoulService">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="CloudStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=iot4iadnug;AccountKey=qP9ixmf1Hi/Z98qsGWqPUo+1oL7baU0wStqb9eZOz8LDS/0Wbbebt6VCryg0sJXrqh7lNHRIZav5aHoa3/YsLA==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
