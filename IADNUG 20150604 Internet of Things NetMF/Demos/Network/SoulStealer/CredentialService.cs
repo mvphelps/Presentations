@@ -11,7 +11,6 @@ namespace SoulStealer
         {
             //\SD\Creds.txt
             string sContent;
-            ///var bytes = File.OpenRead(@"\SD\Creds.txt");
             using( var myFile = new StreamReader(new FileStream(filename, FileMode.Open, FileAccess.Read)))
             {
                 sContent = myFile.ReadToEnd();

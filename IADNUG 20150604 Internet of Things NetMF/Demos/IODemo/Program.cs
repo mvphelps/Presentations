@@ -55,7 +55,7 @@ namespace IODemo
         {
             //Create the output...
             var pwm = new PWM(
-                GT.Socket.GetSocket(7, true, null, null).PWM7, 500, 0, false);
+                GT.Socket.GetSocket(7, true, null, null).PWM7, 1000, 0, false);
             //...and hand it off to someone else to do the logic. Moves the 
             //logic out of the Program.cs file/class.
             var fade = new LightFade(pwm);

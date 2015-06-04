@@ -51,8 +51,8 @@ namespace Tests
         //        Assert.AreEqual(false, o.IsOn());
 
         //        o.Toggle();
-        //        Assert.AreEqual(true, o.IsOn());
-        //        Assert.AreEqual(0.01, o.DutyCyle);
+        //        Assert.AreEqual(true, light.IsOn());
+        //        Assert.AreEqual(0.1, light.DutyCyle);
         //    }
         //}
     }

