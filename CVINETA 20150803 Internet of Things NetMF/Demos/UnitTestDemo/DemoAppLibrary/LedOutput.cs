@@ -6,7 +6,7 @@ namespace DemoAppLibrary
 {
     public class LedOutput
     {
-        private OutputPort mPort;
+        private readonly OutputPort mPort;
         private bool mIsOn;
 
         public LedOutput(OutputPort port)

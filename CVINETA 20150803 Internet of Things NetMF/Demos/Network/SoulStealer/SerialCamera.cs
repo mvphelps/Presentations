@@ -5,6 +5,11 @@ using Microsoft.SPOT.Hardware;
 using GTI = Gadgeteer.SocketInterfaces;
 using GTM = Gadgeteer.Modules;
 
+//NOTE: The provided serial camera driver streams photos
+//as fast as it can take them. Since framerates are slow
+//we need to be able to take the picture at the time motion
+//is detected to avoid getting an empty picture.
+
 namespace Gadgeteer.Modules.GHIElectronics
 {
     /// <summary>A SerialCameraL1 module for Microsoft .NET Gadgeteer</summary>

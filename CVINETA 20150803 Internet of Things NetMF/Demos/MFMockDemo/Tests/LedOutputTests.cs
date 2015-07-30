@@ -70,6 +70,7 @@ namespace Tests
             var light = new PWMTester();
             using (var o = new LedOutput(light, brightness))
             {
+                //This is an example method that uses multiple samples.
                 o.ToggleTimes(3);
 
                 Assert.AreEqual(0.1, light.ChangeLog[0].DutyCycle);

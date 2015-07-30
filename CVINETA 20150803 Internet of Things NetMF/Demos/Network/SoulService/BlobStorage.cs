@@ -5,6 +5,8 @@ using System.Web;
 using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.StorageClient;
 
+//NOTE: This class uses a now deprecated storage client api. Look for the latest API for new apps.
+
 namespace SoulService
 {
     public class BlobStorage

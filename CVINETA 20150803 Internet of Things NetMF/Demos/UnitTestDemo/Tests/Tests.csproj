@@ -60,12 +60,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\DemoAppLibrary\DemoAppLibrary.csproj">
       <Project>{D59016C4-4BE5-4544-871A-5B878B78F38A}</Project>
       <Name>DemoAppLibrary</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
 </Project>
