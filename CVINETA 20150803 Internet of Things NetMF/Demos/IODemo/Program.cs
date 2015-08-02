@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.Threading;
 using Gadgeteer.SocketInterfaces;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 using GT = Gadgeteer;
 using GTM = Gadgeteer.Modules;
-using Gadgeteer.Modules.GHIElectronics;
 using AnalogInput = Microsoft.SPOT.Hardware.AnalogInput;
 
 namespace IODemo
