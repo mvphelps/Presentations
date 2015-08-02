@@ -41,7 +41,7 @@ namespace GarbageCollectionDemo
                 //you are using multiple threads, and you hit the end of a
                 //work for loop in the thread, sleep to yield the CPU.
                 //Compare with and without this line to see the difference.
-                Thread.Sleep(0);                
+                //Thread.Sleep(0);                
             }
         }
 
